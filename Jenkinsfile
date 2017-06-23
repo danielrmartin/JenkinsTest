@@ -1,8 +1,8 @@
 pipeline{
-  agent none{
-  }
+  agent none
+  
   stages{
-    stage("foo"){
+    stage('foo'){
     }
   }
 }
