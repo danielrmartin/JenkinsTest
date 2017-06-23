@@ -27,7 +27,7 @@ pipeline {
     }
     stage('deploy to dev') {
       steps {
-        dir(path: '/tmp') {
+        dir(path: 'Danny') {
           sh 'ls -latr'
         }
         
