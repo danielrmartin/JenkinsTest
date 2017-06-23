@@ -3,6 +3,8 @@ pipeline{
   
   stages{
     stage('foo'){
+      step{
+        sh "echo hello"
     }
   }
 }
