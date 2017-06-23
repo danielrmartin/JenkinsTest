@@ -33,5 +33,13 @@ pipeline {
         
       }
     }
+    stage('post') {
+      steps {
+        catchError() {
+          echo 'WOrd'
+        }
+        
+      }
+    }
   }
 }
