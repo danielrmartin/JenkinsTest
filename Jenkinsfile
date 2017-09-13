@@ -1,7 +1,7 @@
 pipeline {
   agent {
     node {
-      label 'larger'
+      label 'maven-jdk-8'
     }
     
   }
