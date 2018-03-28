@@ -1,7 +1,7 @@
 pipeline {
   agent {
     node {
-      label 'maven-jdk-8'
+      label 'docker'
     }
     
   }
@@ -12,17 +12,17 @@ pipeline {
       }
     }
     stage('Test') {
-      steps {
-        parallel(
-          "Test": {
+      parallel {
+        stage('Test') {
+          steps {
             sh 'echo This is a test'
-            
-          },
-          "test2": {
-            sh 'echo test more stuff'
-            
           }
-        )
+        }
+        stage('test2') {
+          steps {
+            sh 'echo test more stuff'
+          }
+        }
       }
     }
     stage('deploy to dev') {
