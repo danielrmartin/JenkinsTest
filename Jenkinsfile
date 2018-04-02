@@ -11,6 +11,7 @@ pipeline {
     stage('foo') {
       steps {
         sh 'echo hello'
+        bar
         
       }
     }
