@@ -11,7 +11,7 @@ pipeline {
       steps {
         sh 'echo hello'
         sh 'env'
-        bar(env.URL,env.Branch)
+        bar(env.GIT_URL,env.BRANCH_NAME)
         
       }
     }
