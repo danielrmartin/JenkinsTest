@@ -10,7 +10,6 @@ pipeline {
     stage('foo') {
       steps {
         sh 'echo hello'
-        sh 'env'
         bar(env.GIT_URL,env.BRANCH_NAME)
         
       }
@@ -33,6 +32,7 @@ pipeline {
       steps {
         dir(path: 'Danny') {
           sh 'ls -latr'
+          deploy
         }
         
       }
