@@ -1,5 +1,5 @@
 #! groovy
-@Library ('bar@master') _
+//@Library ('bar@master') _
 pipeline {
   agent {
     node {
