@@ -31,16 +31,15 @@ pipeline {
     stage('deploy to dev') {
       steps {
         dir(path: 'Danny') {
-          sh 'ls -latr'
-          deploy
+          sh 'ls -latr'   
         }
-        
+        deploy
       }
     }
     stage('post') {
       steps {
         catchError() {
-          echo 'WOrd'
+          echo 'Word'
         }
         
       }
