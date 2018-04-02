@@ -1,5 +1,5 @@
 #! groovy
-@Library ('deployment@master') _
+@Library ('deployment') _
 pipeline {
   agent {
     node {
@@ -11,6 +11,7 @@ pipeline {
     stage('foo') {
       steps {
         sh 'echo hello'
+        
       }
     }
     stage('Test') {
