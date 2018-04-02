@@ -1,3 +1,5 @@
+#! groovy
+@Library (deployment@master) _
 pipeline {
   agent {
     node {
