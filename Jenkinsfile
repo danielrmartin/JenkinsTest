@@ -10,7 +10,7 @@ pipeline {
     stage('foo') {
       steps {
         sh 'echo hello'
-        bar(foo,bar)
+        bar(env.URL,env.Branch)
         
       }
     }
