@@ -33,7 +33,7 @@ pipeline {
         dir(path: 'Danny') {
           sh 'ls -latr'   
         }
-        deploy
+        deploy('QA')
       }
     }
     stage('post') {
