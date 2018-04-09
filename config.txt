@@ -1,3 +1,3 @@
-Java=1.7.0
-Maven=3.3.1
-Build_target=deploy
+env.Java=1.7.0
+env.Maven=3.3.1
+env.Build_target=deploy
