@@ -1,0 +1,5 @@
+name: pipline
+tools:
+  Java: 1.9.0
+  Maven: 3.3.1
+Builds: Deploy
