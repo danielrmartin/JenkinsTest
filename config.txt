@@ -1,3 +1,4 @@
+#!/bin/groovy
 def Java=1.7.0
 def Maven=3.3.1
 def Build_target=deploy
