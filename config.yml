@@ -4,3 +4,10 @@ tools:
   Java: 1.9.0
   Maven: 3.3.1
 Builds: Deploy
+Test_Stage: 
+  name: "QA test"
+  command: sh bla bla bla bl
+  notify_when: failure
+  notify_who: dmartin@cloudbees.com
+  
+  
