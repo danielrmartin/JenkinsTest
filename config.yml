@@ -1,5 +1,6 @@
 name: pipline
 Agent: Large
+Slack: cje2
 tools:
   Java: 1.9.0
   Maven: 3.3.1
@@ -9,5 +10,6 @@ Test_Stage:
   command: sh bla bla bla bl
   notify_when: failure
   notify_who: dmartin@cloudbees.com
+  
   
   
