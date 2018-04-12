@@ -1,12 +1,5 @@
 #! groovy
-pipeline {
-  agent {
-    node {
-      label 'docker'
-    }
-    
-  }
-  stages {
+  node () {
     stage('foo') {
       steps {
         sh 'echo hello'
@@ -45,4 +38,3 @@ pipeline {
       }
     }
   }
-}
