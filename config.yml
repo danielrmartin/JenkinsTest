@@ -9,9 +9,24 @@ tools:
   Java: 
   Ant: 
 Build:
-   options: 
+   options:
+      first_build:
+         foo: bar
+         danny: Texas
+         Kris: Chigago
+      second_build: 
+         Chris: Tall
+         Sreene: Phili
    command: 
+      first_command: 
+         parallel: True
+         command: "buildall"
+      second_command:
+         parallel: True
+         "clean deploy package"
    file_name: 
+      first_file: "bar/buildall.xml"
+      second_file: "foo/build.xml"
    Notify_When:
         Failure: True
         Pass: True
