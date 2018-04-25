@@ -1,13 +1,13 @@
 name: pipline
 Agent: Large
 Jabber: cje2
-Application_Name:
-Artifact_Location:
-Artifact_Name:
-Artifact_Version: 
+Application_Name: a
+Artifact_Location: a
+Artifact_Name: a
+Artifact_Version: a
 tools:
-  Java: 
-  Ant: 
+  Java: 1
+  Ant: 1
 Build:
    options:
       first_build:
