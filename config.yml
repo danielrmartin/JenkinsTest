@@ -27,15 +27,3 @@ Build:
   file_name:
     first_file: "bar/buildall.xml"
     second_file: "foo/build.xml"
-  Notify_When:
-    Failure: True
-    Pass: True
-    Unstable: False
-  Notify_How:
-    Failure: True
-    Pass: True
-    Unstable: False
-  Notify_Who:
-    Failure: True
-    Pass: True
-    Unstable: False
