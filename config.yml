@@ -1,29 +1,41 @@
 Name: ant_pipeline
-Agent: TestApp
-Jabber: cje2
-Application_Name: IRIS_test
-Artifact_Location: "C:/tem/"
-Artifact_Name: IRIS_OUT.txt
-Artifact_Version: 2.2.1
-tools:
-  Java: "1.6.0_121"
-  Ant: 1.9.7
-Build:
-  options:
-    first_build:
-      foo: bar
-      danny: Texas
-      Kris: Chigago
-    second_build:
-      Chris: Tall
-      Sreene: Phili
-  command:
-    first_command:
-      parallel: True
-      command: "buildall"
-    second_command:
-      parallel: True
-      command: "clean deploy package"
-  file_name:
-    first_file: "bar/buildall.xml"
-    second_file: "foo/build.xml"
+  Agent: TestApp
+  Jabber: cje2
+  Application_Name: IRIS_test
+  Artifact_Location: "C:/tem/"
+  Artifact_Name: IRIS_OUT.txt
+  Artifact_Version: 2.2.1
+  tools:
+    Java: "1.6.0_121"
+    Ant: 1.9.7
+  Build:
+    options:
+      first_build:
+        foo: bar
+        danny: Texas
+        Kris: Chigago
+      second_build:
+        Chris: Tall
+        Sreene: Phili
+    command:
+      first_command:
+        parallel: True
+        command: "buildall"
+      second_command:
+        parallel: True
+        command: "clean deploy package"
+    file_name:
+      first_file: "bar/buildall.xml"
+      second_file: "foo/build.xml"
+    Notify_When:
+      Failure: True
+      Pass: True
+      Unstable: False
+    Notify_How:
+      Failure: True
+      Pass: True
+      Unstable: False
+    Notify_Who:
+      Failure: True
+      Pass: True
+      Unstable: False
