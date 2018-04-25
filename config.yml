@@ -23,7 +23,7 @@ Build:
          command: "buildall"
       second_command:
          parallel: True
-         "clean deploy package"
+         command: "clean deploy package"
    file_name: 
       first_file: "bar/buildall.xml"
       second_file: "foo/build.xml"
