@@ -5,7 +5,7 @@
         bar(env.GIT_URL,env.BRANCH_NAME)
     }
     stage('Test') {
-            sh 'echo test more stuff'
+            sh 'echo test more stuff and junk'
     }
     stage('deploy to dev') {
   
