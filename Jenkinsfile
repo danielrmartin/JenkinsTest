@@ -1,8 +1,8 @@
 #! groovy
   node () {
     stage('foo') {
-        sh 'echo hello'
-        bar(env.GIT_URL,env.BRANCH_NAME)
+        sh 'echo hello;env'
+      //  bar(env.GIT_URL,env.BRANCH_NAME)
     }
     stage('Test') {
             sh 'echo test more stuff'
