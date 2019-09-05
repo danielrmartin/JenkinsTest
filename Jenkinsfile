@@ -12,7 +12,7 @@
         dir(path: 'Danny') {
           sh 'ls -latr'   
         }
-        deploy('QA')
+       // deploy('QA')
       
     }
     stage('post') {
