@@ -1,7 +1,7 @@
 #! groovy
   node () {
     stage('foo') {
-        sh 'echo hello'
+        sh 'echo hello2'
     }
     stage('Test') {
             sh 'echo test more stuff'
