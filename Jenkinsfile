@@ -1,8 +1,7 @@
 #! groovy
   node () {
     stage('foo') {
-        sh 'echo hello;env'
-      //  bar(env.GIT_URL,env.BRANCH_NAME)
+        sh 'echo hello2'
     }
     stage('Test') {
             sh 'echo test more stuff for sure'
@@ -12,7 +11,9 @@
         dir(path: 'Danny') {
           sh 'ls -latr'   
         }
-     //   deploy('QA')
+
+       // deploy('QA')
+
       
     }
     stage('post') {
