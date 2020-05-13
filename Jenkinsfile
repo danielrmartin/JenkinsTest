@@ -10,7 +10,7 @@
     stage('deploy to dev') {
   
         dir(path: 'Danny') {
-          sh 'ls -latr'   
+          sh 'env'   
         }
 
        // deploy('QA')
