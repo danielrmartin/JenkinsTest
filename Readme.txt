@@ -14,5 +14,4 @@ word5
 Migration
 copy zip file
 yo
-making change
 third change
